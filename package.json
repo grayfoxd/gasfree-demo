@@ -1,0 +1,33 @@
+{
+  "name": "gasfree-demo",
+  "version": "1.0.0",
+  "description": "GasFree Demo - 包含账户创建、转账签名、API调用",
+  "type": "module",
+  "main": "gasfree-demo.mjs",
+  "scripts": {
+    "demo": "node gasfree-demo.mjs",
+    "nile-test": "node gasfree-sdk-nile-test.mjs",
+    "test": "node gasfree-demo.mjs",
+    "api:tokens": "node api-tests/1-get-tokens.mjs",
+    "api:providers": "node api-tests/2-get-providers.mjs",
+    "api:address": "node api-tests/3-get-address.mjs",
+    "api:submit": "node api-tests/4-submit-transfer.mjs",
+    "api:status": "node api-tests/5-get-status.mjs",
+    "api:activate": "node api-tests/6-activate-account.mjs"
+  },
+  "dependencies": {
+    "@gasfree/gasfree-sdk": "^1.1.2",
+    "dotenv": "^16.6.1",
+    "tronweb": "^6.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "gasfree",
+    "tron",
+    "usdt",
+    "transfer"
+  ],
+  "license": "MIT"
+}
